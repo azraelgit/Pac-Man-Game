@@ -196,14 +196,4 @@ class Ghost extends Character {
         return false;
     }
 
-    /**
-    *I will be honest, I could not find a generic solution for the ghost to move towards the ghost healer.
-    *They do attempt to move towards the ghost healer however they get stuck in specific areas.
-    *Places they get stuck in: the top of Level 1 and the bottom right of Level 3. Maybe other areas that I haven't checked.
-    *The ghost gets stuck near places and move backwards and forwards creating an infinite cycle.
-    *For example: They repeat a set of directions such as going left because the condition is that the ghost healer is at their left then going right because now the ghost healer is to their right
-    *This infinite cycle is found at the top of Level 1 where the ghost healer and a set of trees are below the ghost making it turn left and right
-    *I tried fixing this by priortising their path to go "up" then "left" however that only solves the condition that the ghost is at the side or boneath the ghost healer
-    *In other areas they successfully make it and get revived
-    */
 }
